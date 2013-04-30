@@ -2,7 +2,7 @@ tmlib.jsでiPhone風ピッカーを表示
 ========
 
 <br />
-<img href="https://raw.github.com/omatoro/tmlib.js_iPhonePicker/master/image.png"></img>
+<img src="https://raw.github.com/omatoro/tmlib.js_iPhonePicker/master/image.png"></img>
 <br />
 
 ##必要なもの
@@ -13,3 +13,7 @@ tmlib.jsでiPhone風ピッカーを表示
 
 ##実行サンプル
 * http://jsdo.it/omatoro/1gI6
+
+##特徴
+canvas only のため、不要なタグを出力しません。
+そのため、ゲームなどで利用する場合は使いやすいかと思います。
