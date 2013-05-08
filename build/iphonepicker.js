@@ -1,6 +1,9 @@
 /**
  * imitate iPhone picker
  */
+
+var game = game || {};
+
 (function(ns) {
 
 	ns.iPhoneBlueButton = tm.createClass({
