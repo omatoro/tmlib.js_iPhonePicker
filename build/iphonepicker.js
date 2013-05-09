@@ -373,7 +373,9 @@ var game = game || {};
 	        	if (!(array[0] instanceof Array) && !(typeof array === "string" || array instanceof String)) {
 	        		this.argType = "complex";
 	        	}
-	        	this.argType = "array";
+	        	else {
+	        		this.argType = "array";
+	        	}
 	        }
 	        else if (typeof array === "string" || array instanceof String) { this.argType = "string"; }
 	        else { this.argType = "object"; }
