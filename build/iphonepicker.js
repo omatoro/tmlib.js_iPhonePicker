@@ -15,8 +15,8 @@ var game = game || {};
 	        text  = text  || "Button";
 	        this.backgroundColor = "rgba(0, 0, 0, 0.0)";
 	        this.alpha = 1.0;
-	        this.interaction.enabled = true;
-	        this.interaction.boundingType = "rect";
+	        this.setInteractive(true);
+	        this.boundingType = "rect";
 	        // ラベル
 	        this.label = tm.app.Label(text || "").addChildTo(this);
 	        this.label.setAlign("center").setBaseline("middle");
