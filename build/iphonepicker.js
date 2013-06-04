@@ -235,8 +235,8 @@ var game = game || {};
 	        this.limitAlpha = 1.0;
 	        this.currentAlpha = 0.0;
 	        
-	        this.interaction.enabled = true;
-	        this.interaction.setBoundingType("rect");
+	        this.setInteractive(true);
+	        this.setBoundingType("rect");
 	        
 	        this.addEventListener("pointingover", function() {
 	            // this.tweener.clear();
@@ -428,8 +428,8 @@ var game = game || {};
 	            }
 	        }
 
-	        this.interaction.enabled = true;
-	        this.interaction.boundingType = "rect";
+	        this.setInteractive(true);
+	        this.boundingType = "rect";
 
 	        // ボタンのアルファ値を調整させる
 	        this.setAllButtonAlpha();
