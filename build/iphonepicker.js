@@ -422,7 +422,6 @@ var game = game || {};
 	        	this.buttonNum = array.length;
 	            var i = 0;
 	            for (var i = 0; i < this.buttonNum; ++i) {
-	            // for (var key in array) {
 	                this.button[i] = PullDownStringButton(MENU_ELEMENT_WIDTH, MENU_ELEMENT_HEIGHT, array[i].text, array[i].subData);
 	                this.button[i].setPosition(MENU_ELEMENT_CENTER_X, -(IN_MENU_SCROLL_HALF_HEIGHT)+(MENU_ELEMENT_HEIGHT/2)+(i*(MENU_ELEMENT_HEIGHT + MENU_ELEMENT_BETTWEEN_PADDING)));
 	                this.addChild(this.button[i]);
