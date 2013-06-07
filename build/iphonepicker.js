@@ -236,7 +236,7 @@ var game = game || {};
 	        this.currentAlpha = 0.0;
 	        
 	        this.setInteractive(true);
-	        this.setBoundingType("rect");
+	        this.boundingType = "rect";
 	        
 	        this.addEventListener("pointingover", function() {
 	            // this.tweener.clear();
