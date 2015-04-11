@@ -66,4 +66,4 @@
 	ns.iPhoneBlueButton.FONT_SIZE  = 25;
 	ns.iPhoneBlueButton.FONT_COLOR = "white";
 
-})(game);
+})(this);

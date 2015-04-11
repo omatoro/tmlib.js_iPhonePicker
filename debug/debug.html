@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <script src="http://rawgithub.com/phi-jp/tmlib.js/bf50fe0c601213aa6204784caf13465e5a26dfa0/build/tmlib.js"></script>
+        <script src="http://rawgithub.com/omatoro/tmlib.js_drag/master/extend_inputClass/drag.js"></script>
+
+        <script src="./../js/inertia.js"></script>
+        <script src="./../js/iphonebluebutton.js"></script>
+        <script src="./../js/iphonepicker.js"></script>
+
+        <script>
+
+var SCREEN_WIDTH    = 465;
+var SCREEN_HEIGHT   = 465;
+var SCREEN_CENTER_X = SCREEN_WIDTH/2;
+var SCREEN_CENTER_Y = SCREEN_HEIGHT/2;
+
+tm.main(function() {
+    var app = tm.display.CanvasApp("#world");
+    app.resize(SCREEN_WIDTH, SCREEN_HEIGHT);
+    app.fitWindow();
+    app.replaceScene(MainScene());
+    app.run();
+});
+
+
+tm.define("MainScene", {
+    superClass: "tm.app.Scene",
+    
+    init: function() {
+        this.superInit();
+        this.fromJSON({
+            children: {
+                test: {
+                    type: "tm.display.Label",
+                    init: "asdf",
+                    x: SCREEN_CENTER_X,
+                    y: SCREEN_CENTER_Y,
+                },
+            },
+        });
+
+        var button = tm.ui.FlatButton({width: 200, height: 100, text: 'test'})
+            .setPosition(150,150)
+            .addChildTo(this)
+            .setInteractive(true)
+            .setBoundingType('rect');
+        button.on("pointingstart", function () {
+            debugger;
+        });
+    },
+});
+
+        </script>
+    </head>
+    <body>
+        <canvas id="world"></canvas>
+    </body>
+</html>

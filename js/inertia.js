@@ -90,4 +90,4 @@
 
 	    return resultLength;
 	};
-})(game);
+})(this);
